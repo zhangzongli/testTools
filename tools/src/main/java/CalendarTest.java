@@ -1,7 +1,10 @@
 package main.java;
 
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by zhangzl on 2017/9/29.
@@ -18,7 +21,7 @@ public class CalendarTest {
             Calendar from = Calendar.getInstance();
             from.setTime(date);
             Calendar fromNull = null;
-//            fromNull.setTime(date);¿ÕÖ¸Õë
+//            fromNull.setTime(date);ï¿½ï¿½Ö¸ï¿½ï¿½
             fromNull = from;
         }catch (Exception e) {
             e.printStackTrace();
@@ -36,4 +39,5 @@ public class CalendarTest {
         calendar.set(Calendar.DAY_OF_MONTH, 1);
         System.out.println(calendar.getActualMaximum(Calendar.DAY_OF_MONTH));
     }
+
 }
